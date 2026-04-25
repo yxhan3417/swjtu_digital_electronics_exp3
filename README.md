@@ -98,9 +98,9 @@ endmodule
 
 ```
 # 3 仿真波形
-
+![alt text](https://github.com/yxhan3417/swjtu_digital_electronics_exp3/imgs/boxingtu.png?raw=true)
 <img src="/imgs/boxingtu.png" width = "80%">
 
 # 4 引脚分配
-
+![alt text](https://github.com/yxhan3417/swjtu_digital_electronics_exp3/imgs/pin.png?raw=true)
 <img src="/imgs/pin.png" width = "80%">

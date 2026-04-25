@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 04 17:53:53 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : yxh_2690_3
+Top-level Entity Name : yxh_2690_3
+Family : Cyclone IV E
+Total logic elements : 9
+    Total combinational functions : 9
+    Dedicated logic registers : 3
+Total registers : 3
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

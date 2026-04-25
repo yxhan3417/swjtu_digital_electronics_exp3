@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Nov 04 17:53:57 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : yxh_2690_3
+Top-level Entity Name : yxh_2690_3
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 9 / 6,272 ( < 1 % )
+    Total combinational functions : 9 / 6,272 ( < 1 % )
+    Dedicated logic registers : 3 / 6,272 ( < 1 % )
+Total registers : 3
+Total pins : 12 / 92 ( 13 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

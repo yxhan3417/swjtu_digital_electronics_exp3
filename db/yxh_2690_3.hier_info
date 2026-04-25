@@ -1,0 +1,43 @@
+|yxh_2690_3
+clk => clk.IN1
+en => en.IN1
+Q[0] << Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] << Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] << Q[2].DB_MAX_OUTPUT_PORT_TYPE
+codeout[0] << yxh_2690_3_2:dec.codeout
+codeout[1] << yxh_2690_3_2:dec.codeout
+codeout[2] << yxh_2690_3_2:dec.codeout
+codeout[3] << yxh_2690_3_2:dec.codeout
+codeout[4] << yxh_2690_3_2:dec.codeout
+codeout[5] << yxh_2690_3_2:dec.codeout
+codeout[6] << yxh_2690_3_2:dec.codeout
+
+
+|yxh_2690_3|yxh_2690_3_1:cnt
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+en => Q[0]~reg0.ENA
+en => Q[1]~reg0.ENA
+en => Q[2]~reg0.ENA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|yxh_2690_3|yxh_2690_3_2:dec
+codein[0] => Decoder0.IN2
+codein[1] => Decoder0.IN1
+codein[1] => Decoder1.IN1
+codein[2] => Decoder0.IN0
+codein[2] => Decoder1.IN0
+codein[2] => codeout[3].DATAIN
+codeout[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+codeout[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+codeout[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+codeout[3] <= codein[2].DB_MAX_OUTPUT_PORT_TYPE
+codeout[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+codeout[5] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+codeout[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

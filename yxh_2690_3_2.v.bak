@@ -1,0 +1,17 @@
+module yxh_2690_3_2(codein,codeout);
+input [2:0 ]codein;
+output reg [6:0] codeout;
+always @(*)
+begin
+	case(codein)
+		3'd0: codeout = 7'b1000000;
+		3'd1: codeout = 7'b0100000;
+		3'd2: codeout = 7'b0010000;
+		3'd3: codeout = 7'b0001000;
+		3'd4: codeout = 7'b0000100;
+		3'd5: codeout = 7'b0000010;
+		3'd6: codeout = 7'b0000001;
+		default: codeout = 7'b0000000;
+	endcase
+end
+endmodule

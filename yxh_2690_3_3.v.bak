@@ -1,0 +1,16 @@
+module yxh_2690_3_3(clk.en.Q,codeout);
+input clk;
+input en;
+output [2:0]Q;
+output [6:0]codeout;
+yxh_2690_3_1 cnt(
+		.clk(clk),
+		.en(en),
+		.Q(Q)
+
+);
+yxh_2690_3_2 dec(
+		.codein(Q),
+		.codeout(codeout)
+);
+endmodule 
